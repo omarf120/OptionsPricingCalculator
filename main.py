@@ -506,6 +506,11 @@ else:
 
 pseudo_prob_down = 1 - pseudo_prob_up
 
+if d_u_given == "N":
+    var_names.append("Up Movement Factor")
+    var_values.append(up_factor)
+    var_names.append("Down Movement Factor")
+    var_values.append(down_factor)
 var_names.append("Pseudo Probability Up")
 var_values.append(pseudo_prob_up)
 var_names.append("Pseudo Probability Down")
